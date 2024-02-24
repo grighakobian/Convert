@@ -5,25 +5,44 @@
 //  Created by Grigor Hakobyan on 24.02.24.
 //
 
+import AppKit
 import SwiftUI
+import CodeEditSourceEditor
 import ComposableArchitecture
 
 struct AppView: View {
     let store: StoreOf<AppFeature>
     
-    @State private var text1 = "This is some editable text..."
-    @State private var text2 = "This is some editable text..."
-
+    @State var text1 = "let x = 1.0"
+    @State var text2 = "let x = 1.0"
+    @State var cursorPositions = [CursorPosition]()
+    
     var body: some View {
-        HStack {
-            TextEditor(text: $text1)
-                .font(.system(size: 16, weight: .regular, design: .monospaced))
+        WithPerceptionTracking {
+            HStack {
+                CodeEditSourceEditor(
+                    $text1,
+                    language: .swift,
+                    theme: .civic,
+                    font: NSFont.monospacedSystemFont(ofSize: 16, weight: .semibold),
+                    tabWidth: 4,
+                    lineHeight: 1.2,
+                    wrapLines: false,
+                    cursorPositions: $cursorPositions
+                )
                 
-            TextEditor(text: $text2)
-                .font(.system(size: 16, weight: .regular, design: .monospaced))
+                CodeEditSourceEditor(
+                    $text2,
+                    language: .swift,
+                    theme: .civic,
+                    font: NSFont.monospacedSystemFont(ofSize: 16, weight: .semibold),
+                    tabWidth: 4,
+                    lineHeight: 1.2,
+                    wrapLines: false,
+                    cursorPositions: $cursorPositions
+                )
+            }
         }
-        .padding()
-        .padding()
     }
 }
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030700932B8A55D2005591C8 /* CodeEditSourceEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 030700922B8A55D2005591C8 /* CodeEditSourceEditor */; };
+		030700952B8A5716005591C8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030700942B8A5716005591C8 /* Theme.swift */; };
+		030700982B8A57D5005591C8 /* SwiftHEXColors in Frameworks */ = {isa = PBXBuildFile; productRef = 030700972B8A57D5005591C8 /* SwiftHEXColors */; };
 		DDFC13E62B8A41800053BB3E /* ConvertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC13E52B8A41800053BB3E /* ConvertApp.swift */; };
 		DDFC13EA2B8A41820053BB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFC13E92B8A41820053BB3E /* Assets.xcassets */; };
 		DDFC13EE2B8A41820053BB3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFC13ED2B8A41820053BB3E /* Preview Assets.xcassets */; };
@@ -16,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030700942B8A5716005591C8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		DDFC13E22B8A41800053BB3E /* Convert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFC13E52B8A41800053BB3E /* ConvertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertApp.swift; sourceTree = "<group>"; };
 		DDFC13E92B8A41820053BB3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,7 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030700982B8A57D5005591C8 /* SwiftHEXColors in Frameworks */,
 				DDFC13F62B8A428F0053BB3E /* ComposableArchitecture in Frameworks */,
+				030700932B8A55D2005591C8 /* CodeEditSourceEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +132,7 @@
 			children = (
 				DDFC13F72B8A43940053BB3E /* AppFeature.swift */,
 				DDFC13F92B8A439E0053BB3E /* AppView.swift */,
+				030700942B8A5716005591C8 /* Theme.swift */,
 			);
 			path = AppFeature;
 			sourceTree = "<group>";
@@ -148,6 +155,8 @@
 			name = Convert;
 			packageProductDependencies = (
 				DDFC13F52B8A428F0053BB3E /* ComposableArchitecture */,
+				030700922B8A55D2005591C8 /* CodeEditSourceEditor */,
+				030700972B8A57D5005591C8 /* SwiftHEXColors */,
 			);
 			productName = Convert;
 			productReference = DDFC13E22B8A41800053BB3E /* Convert.app */;
@@ -179,6 +188,8 @@
 			mainGroup = DDFC13D92B8A41800053BB3E;
 			packageReferences = (
 				DDFC13F42B8A428F0053BB3E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				030700912B8A55D2005591C8 /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */,
+				030700962B8A57D5005591C8 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */,
 			);
 			productRefGroup = DDFC13E32B8A41800053BB3E /* Products */;
 			projectDirPath = "";
@@ -207,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDFC13F82B8A43940053BB3E /* AppFeature.swift in Sources */,
+				030700952B8A5716005591C8 /* Theme.swift in Sources */,
 				DDFC13E62B8A41800053BB3E /* ConvertApp.swift in Sources */,
 				DDFC13FA2B8A439E0053BB3E /* AppView.swift in Sources */,
 			);
@@ -355,7 +367,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.grighakobian.Convert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -393,7 +405,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.grighakobian.Convert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +441,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		030700912B8A55D2005591C8 /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeEditApp/CodeEditSourceEditor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+		030700962B8A57D5005591C8 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thii/SwiftHEXColors";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
 		DDFC13F42B8A428F0053BB3E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
@@ -440,6 +468,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		030700922B8A55D2005591C8 /* CodeEditSourceEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 030700912B8A55D2005591C8 /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */;
+			productName = CodeEditSourceEditor;
+		};
+		030700972B8A57D5005591C8 /* SwiftHEXColors */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 030700962B8A57D5005591C8 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */;
+			productName = SwiftHEXColors;
+		};
 		DDFC13F52B8A428F0053BB3E /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DDFC13F42B8A428F0053BB3E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
