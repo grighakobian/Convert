@@ -37,6 +37,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030700852B8A4C45005591C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDFC13E92B8A41820053BB3E /* Assets.xcassets */,
+				DDFC13EB2B8A41820053BB3E /* Convert.entitlements */,
+				DDFC13EC2B8A41820053BB3E /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		030700882B8A4CC9005591C8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				030700892B8A4CD3005591C8 /* App */,
+				0307008D2B8A4D0E005591C8 /* Views */,
+				0307008A2B8A4CD9005591C8 /* Features */,
+				0307008B2B8A4CE5005591C8 /* Extensions */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		030700892B8A4CD3005591C8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DDFC13E52B8A41800053BB3E /* ConvertApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0307008A2B8A4CD9005591C8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DDFC13FB2B8A43A40053BB3E /* AppFeature */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		0307008B2B8A4CE5005591C8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0307008D2B8A4D0E005591C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DDFC13D92B8A41800053BB3E = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +107,8 @@
 		DDFC13E42B8A41800053BB3E /* Convert */ = {
 			isa = PBXGroup;
 			children = (
-				DDFC13E52B8A41800053BB3E /* ConvertApp.swift */,
-				DDFC13E92B8A41820053BB3E /* Assets.xcassets */,
-				DDFC13EB2B8A41820053BB3E /* Convert.entitlements */,
-				DDFC13EC2B8A41820053BB3E /* Preview Content */,
-				DDFC13FB2B8A43A40053BB3E /* AppFeature */,
+				030700882B8A4CC9005591C8 /* Sources */,
+				030700852B8A4C45005591C8 /* Resources */,
 			);
 			path = Convert;
 			sourceTree = "<group>";
@@ -286,10 +334,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Convert/Convert.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Convert/Resources/Convert.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Convert/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Convert/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = ZL85VTVZDZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -324,10 +372,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Convert/Convert.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Convert/Resources/Convert.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Convert/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Convert/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = ZL85VTVZDZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
